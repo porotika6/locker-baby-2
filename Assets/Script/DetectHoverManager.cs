@@ -2,13 +2,14 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 
-public class DetectHovrManager : MonoBehaviour
+public class DetectHover : MonoBehaviour
 {
     private SpriteRenderer sr;
     private bool isHovered;
     private Camera cam;
     private Sprite defaultSprite;
     public Sprite hoverSprite;
+
     void Start()
     {
         cam = Camera.main;
@@ -16,15 +17,12 @@ public class DetectHovrManager : MonoBehaviour
         if (sr != null) defaultSprite = sr.sprite;
     }
 
-    
-    // Update is called once per frame
     void Update()
     {
-         DetectHover();
-        
+         HandleDetectHover();
     }
 
-    void DetectHover()
+    void HandleDetectHover()
     {
         Vector2 mouseWorldPos = cam.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         RaycastHit2D hit = Physics2D.Raycast(mouseWorldPos, Vector2.zero);
