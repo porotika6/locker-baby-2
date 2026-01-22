@@ -1,26 +1,40 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public class DetectClick : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public UnityEvent Clicked;
+
+    private const float ForwardDistanceFromCamera = 20f;
+    private Camera _cam;
+
+    private void Awake()
     {
-        
+        _cam = Camera.main;
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        DetectClick();
+        HandleClick();
     }
 
-    void DetectClick()
+    private void HandleClick()
     {
-    
-     {
-        if (Mouse.current.leftButton.wasPressedThisFrame)
-        Debug.Log("Dah di klik nih");
-     }
+        var pointer = Pointer.current;
+        Vector2 currentClickPos = pointer.position.ReadValue();
+
+        if (pointer.press.wasReleasedThisFrame)
+        {
+            Ray ray = _cam.ScreenPointToRay(currentClickPos);
+            RaycastHit2D hit = Physics2D.GetRayIntersection(ray, ForwardDistanceFromCamera);
+            Collider2D other = hit.collider;
+            if (other && other.gameObject == gameObject)
+            {
+                Clicked?.Invoke();
+                Debug.Log($"Clicked <color=yellow>{gameObject.name}</color>");
+            }
+        }
     }
 }

@@ -340,6 +340,7 @@ GameObject:
   - component: {fileID: 522812606}
   - component: {fileID: 522812607}
   - component: {fileID: 522812608}
+  - component: {fileID: 522812609}
   m_Layer: 0
   m_Name: Lemari Atas
   m_TagString: Untagged
@@ -480,6 +481,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   hoverSprite: {fileID: 21300000, guid: a08b8c50c9bda0e4cad4d2433ee45349, type: 3}
+--- !u!114 &522812609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522812604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee4808df09f94c84dac1cb29e61d7ab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectClick
+  Clicked:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &707205551
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,6 +508,7 @@ GameObject:
   - component: {fileID: 707205553}
   - component: {fileID: 707205554}
   - component: {fileID: 707205555}
+  - component: {fileID: 707205556}
   m_Layer: 0
   m_Name: Laci
   m_TagString: Untagged
@@ -632,6 +649,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   hoverSprite: {fileID: 21300000, guid: cb152df7dd3c88744b439fd8bdc2c0e6, type: 3}
+--- !u!114 &707205556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707205551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee4808df09f94c84dac1cb29e61d7ab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectClick
+  Clicked:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &887408515
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,6 +801,7 @@ GameObject:
   - component: {fileID: 1375804978}
   - component: {fileID: 1375804979}
   - component: {fileID: 1375804980}
+  - component: {fileID: 1375804981}
   m_Layer: 0
   m_Name: Wastafel
   m_TagString: Untagged
@@ -909,6 +942,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   hoverSprite: {fileID: 21300000, guid: 5cc05291364f41646a93f84567f83fcc, type: 3}
+--- !u!114 &1375804981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375804976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee4808df09f94c84dac1cb29e61d7ab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectClick
+  Clicked:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1390464569
 GameObject:
   m_ObjectHideFlags: 0
@@ -1304,6 +1352,7 @@ GameObject:
   - component: {fileID: 1854910800}
   - component: {fileID: 1854910801}
   - component: {fileID: 1854910802}
+  - component: {fileID: 1854910803}
   m_Layer: 0
   m_Name: Kulkas
   m_TagString: Untagged
@@ -1444,6 +1493,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   hoverSprite: {fileID: 21300000, guid: 8d8024dce20db2d4eb6acc09e1e9ef4d, type: 3}
+--- !u!114 &1854910803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854910798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee4808df09f94c84dac1cb29e61d7ab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectClick
+  Clicked:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2118077643
 GameObject:
   m_ObjectHideFlags: 0
@@ -1456,6 +1520,7 @@ GameObject:
   - component: {fileID: 2118077645}
   - component: {fileID: 2118077646}
   - component: {fileID: 2118077647}
+  - component: {fileID: 2118077648}
   m_Layer: 0
   m_Name: Pintu
   m_TagString: Untagged
@@ -1596,6 +1661,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   hoverSprite: {fileID: 21300000, guid: c83ebba1e3011ef42a09e5cced630a1d, type: 3}
+--- !u!114 &2118077648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118077643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee4808df09f94c84dac1cb29e61d7ab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectClick
+  Clicked:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
