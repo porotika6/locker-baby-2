@@ -4,17 +4,24 @@ using UnityEngine.InputSystem;
 
 public class DetectHovrManager : MonoBehaviour
 {
-     private SpriteRenderer sr;
+    private SpriteRenderer sr;
     private bool isHovered;
     private Camera cam;
     private Sprite defaultSprite;
     public Sprite hoverSprite;
- 
+    void Start()
+    {
+        cam = Camera.main;
+        sr = GetComponent<SpriteRenderer>();
+        if (sr != null) defaultSprite = sr.sprite;
+    }
+
     
     // Update is called once per frame
     void Update()
     {
          DetectHover();
+         DetectClick();
     }
 
     void DetectHover()
@@ -35,5 +42,14 @@ public class DetectHovrManager : MonoBehaviour
             isHovered = false;
               if (sr != null) sr.sprite = defaultSprite;
         }
+    }
+
+    void DetectClick()
+    {
+    if (!isHovered) return;
+     {
+        if (Mouse.current.leftButton.wasPressedThisFrame)
+        Debug.Log("Dah di klik nih");
+     }
     }
 }
