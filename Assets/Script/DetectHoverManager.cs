@@ -21,7 +21,7 @@ public class DetectHovrManager : MonoBehaviour
     void Update()
     {
          DetectHover();
-         DetectClick();
+        
     }
 
     void DetectHover()
@@ -44,12 +44,5 @@ public class DetectHovrManager : MonoBehaviour
         }
     }
 
-    void DetectClick()
-    {
-    if (!isHovered) return;
-     {
-        if (Mouse.current.leftButton.wasPressedThisFrame)
-        Debug.Log("Dah di klik nih");
-     }
-    }
+    
 }
