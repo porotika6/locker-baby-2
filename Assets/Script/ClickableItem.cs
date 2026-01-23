@@ -9,12 +9,14 @@ public class ClickableItem : MonoBehaviour, IClickable
     // OnClicked is called by ClickManager when the item is clicked
     public void OnClicked()
     {
-        Clicked?.Invoke();
-        Debug.Log($"Clicked <color=yellow>{gameObject.name}</color>");
-        Transition.Instance.PlayFadeAnimation();
+        TransitionManager.Instance.PlayTransition(() =>
+        {
+            Clicked?.Invoke();
+            Debug.Log($"Clicked <color=yellow>{gameObject.name}</color>");
+        });
     }
 
     // Determines whether the object can be clicked (checked by ClickManager)
     public bool CanBeClicked()
-        => IsClickable && enabled;
+        => IsClickable && enabled && !TransitionManager.Instance.IsTransitioning;
 }
