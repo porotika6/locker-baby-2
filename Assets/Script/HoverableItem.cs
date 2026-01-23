@@ -1,7 +1,6 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-public class DetectHover : MonoBehaviour, IHoverable
+public class HoverableItem : MonoBehaviour, IHoverable
 {
     public SpriteRenderer SpriteRenderer;
     public Sprite HoverSprite;
