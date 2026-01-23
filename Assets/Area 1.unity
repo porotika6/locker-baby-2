@@ -479,8 +479,9 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6aad5b79d45ddd841bddae9f18691641, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
-  hoverSprite: {fileID: 21300000, guid: a08b8c50c9bda0e4cad4d2433ee45349, type: 3}
+  m_EditorClassIdentifier: Assembly-CSharp::DetectHover
+  SpriteRenderer: {fileID: 522812606}
+  HoverSprite: {fileID: 21300000, guid: a08b8c50c9bda0e4cad4d2433ee45349, type: 3}
 --- !u!114 &522812609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,6 +494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee4808df09f94c84dac1cb29e61d7ab5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DetectClick
+  IsClickable: 1
   Clicked:
     m_PersistentCalls:
       m_Calls: []
@@ -647,8 +649,9 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6aad5b79d45ddd841bddae9f18691641, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
-  hoverSprite: {fileID: 21300000, guid: cb152df7dd3c88744b439fd8bdc2c0e6, type: 3}
+  m_EditorClassIdentifier: Assembly-CSharp::DetectHover
+  SpriteRenderer: {fileID: 707205553}
+  HoverSprite: {fileID: 21300000, guid: cb152df7dd3c88744b439fd8bdc2c0e6, type: 3}
 --- !u!114 &707205556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -661,6 +664,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee4808df09f94c84dac1cb29e61d7ab5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DetectClick
+  IsClickable: 1
   Clicked:
     m_PersistentCalls:
       m_Calls: []
@@ -940,8 +944,9 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6aad5b79d45ddd841bddae9f18691641, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
-  hoverSprite: {fileID: 21300000, guid: 5cc05291364f41646a93f84567f83fcc, type: 3}
+  m_EditorClassIdentifier: Assembly-CSharp::DetectHover
+  SpriteRenderer: {fileID: 1375804978}
+  HoverSprite: {fileID: 21300000, guid: 5cc05291364f41646a93f84567f83fcc, type: 3}
 --- !u!114 &1375804981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -954,6 +959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee4808df09f94c84dac1cb29e61d7ab5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DetectClick
+  IsClickable: 1
   Clicked:
     m_PersistentCalls:
       m_Calls: []
@@ -1491,8 +1497,9 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6aad5b79d45ddd841bddae9f18691641, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
-  hoverSprite: {fileID: 21300000, guid: 8d8024dce20db2d4eb6acc09e1e9ef4d, type: 3}
+  m_EditorClassIdentifier: Assembly-CSharp::DetectHover
+  SpriteRenderer: {fileID: 1854910800}
+  HoverSprite: {fileID: 21300000, guid: 8d8024dce20db2d4eb6acc09e1e9ef4d, type: 3}
 --- !u!114 &1854910803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1505,6 +1512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee4808df09f94c84dac1cb29e61d7ab5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DetectClick
+  IsClickable: 1
   Clicked:
     m_PersistentCalls:
       m_Calls: []
@@ -1659,8 +1667,9 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6aad5b79d45ddd841bddae9f18691641, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
-  hoverSprite: {fileID: 21300000, guid: c83ebba1e3011ef42a09e5cced630a1d, type: 3}
+  m_EditorClassIdentifier: Assembly-CSharp::DetectHover
+  SpriteRenderer: {fileID: 2118077645}
+  HoverSprite: {fileID: 21300000, guid: c83ebba1e3011ef42a09e5cced630a1d, type: 3}
 --- !u!114 &2118077648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1673,6 +1682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee4808df09f94c84dac1cb29e61d7ab5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DetectClick
+  IsClickable: 1
   Clicked:
     m_PersistentCalls:
       m_Calls: []
