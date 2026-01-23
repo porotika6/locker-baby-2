@@ -11,8 +11,7 @@ public class ClickableItem : MonoBehaviour, IClickable
     {
         Clicked?.Invoke();
         Debug.Log($"Clicked <color=yellow>{gameObject.name}</color>");
-       Transition.Instance.PlayFadeAnimation();
-    
+        Transition.Instance.PlayFadeAnimation();
     }
 
     // Determines whether the object can be clicked (checked by ClickManager)

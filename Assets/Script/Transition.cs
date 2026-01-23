@@ -2,14 +2,13 @@ using UnityEngine;
 
 public class Transition : MonoBehaviour
 {
-    // 1. Variabel statis untuk menyimpan Instance
-     public static Transition Instance { get; private set; }
+    public static Transition Instance { get; private set; }
 
-     private Animator fadeAnim;
+    [SerializeField] private Animator _animator;
 
     private void Awake()
     {
-        // 2. Cek apakah Instance sudah ada
+        // Cek apakah Instance sudah ada
         if (Instance != null && Instance != this)
         {
             // Jika sudah ada instance lain, hancurkan objek ini (duplikat)
@@ -17,24 +16,20 @@ public class Transition : MonoBehaviour
             return;
         }
 
-        // 3. Set Instance ke skrip ini
         Instance = this;
-
-        // 4. (Opsional tapi Direkomendasikan) Agar tidak hancur saat ganti Scene
         DontDestroyOnLoad(gameObject);
         
         // Mengambil komponen di Awake lebih aman untuk Singleton
-        fadeAnim = GetComponent<Animator>();
+        _animator = GetComponent<Animator>();
     }
 
-    // Contoh fungsi untuk memicu animasi (bisa dipanggil dari skrip lain)
     public void PlayFadeAnimation()
     {
-        if (fadeAnim != null)
-        {
-            fadeAnim.SetTrigger("FadeAnimation"); // Pastikan parameter "FadeIn" ada di Animator Controller
-        }
+        _animator.SetTrigger("FadeAnimation");
     }
     
-    
+    public void OnTransitionPeakReached()
+    {
+        Debug.Log("Transition peak reached.");
+    }
 }
