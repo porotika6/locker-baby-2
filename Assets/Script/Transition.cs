@@ -3,9 +3,9 @@ using UnityEngine;
 public class Transition : MonoBehaviour
 {
     // 1. Variabel statis untuk menyimpan Instance
-    public static Transition Instance { get; private set; }
+     public static Transition Instance { get; private set; }
 
-    private Animator fadeAnim;
+     private Animator fadeAnim;
 
     private void Awake()
     {
