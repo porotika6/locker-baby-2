@@ -15,5 +15,5 @@ public class ClickableItem : MonoBehaviour, IClickable
 
     // Determines whether the object can be clicked (checked by ClickManager)
     public bool CanBeClicked()
-        => IsClickable;
+        => IsClickable && enabled;
 }

@@ -15,6 +15,16 @@ public interface IClickable
     public void OnClicked();
 }
 
+/// <summary>
+/// Manages click interactions in the game world.
+/// Detects clicks on game objects that implement the IClickable interface.
+/// Handles click detection with drag distance threshold to distinguish between clicks and drags.
+/// </summary>
+/// <remarks>
+/// This manager is automatically initialized at runtime as a singleton and persists across scene loads.
+/// It uses the new Input System (UnityEngine.InputSystem) to detect pointer input.
+/// Raycasting is performed in 2D space against objects on specified layers.
+/// </remarks>
 public class ClickManager : MonoBehaviour
 {
     public LayerMask ClickableLayers = -1; // -1 means all layers
