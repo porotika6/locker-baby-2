@@ -1,35 +1,50 @@
 using UnityEngine;
+using UnityEngine.Assertions;
 
 public class HoverableItem : MonoBehaviour, IHoverable
 {
     public SpriteRenderer SpriteRenderer;
     public Sprite HoverSprite;
 
-    private Sprite defaultSprite;
-    private bool isHovered;
+    private Sprite _defaultSprite;
+    private bool _isHovered;
 
-    void Start()
+    void Awake()
     {
-        if (SpriteRenderer != null)
-            defaultSprite = SpriteRenderer.sprite;
+        Assert.IsNotNull(SpriteRenderer, $"{nameof(SpriteRenderer)} is not assigned in {gameObject.name}.");
+        _defaultSprite = SpriteRenderer.sprite;
     }
 
     // Called by HoverManager when the mouse starts hovering over the object.
     public void OnHoverEntered()
     {
-        isHovered = true;
+        _isHovered = true;
 
-        if (SpriteRenderer != null && HoverSprite != null)
+        if (HoverSprite != null)
             SpriteRenderer.sprite = HoverSprite;
     }
 
     // Called by HoverManager when the mouse stops hovering over the object.
     public void OnHoverExited()
     {
-        isHovered = false;
+        _isHovered = false;
+        SpriteRenderer.sprite = _defaultSprite;
+    }
 
-        if (SpriteRenderer != null)
-            SpriteRenderer.sprite = defaultSprite;
+    public void SetDefaultSprite(Sprite sprite)
+    {
+        _defaultSprite = sprite;
+
+        if (!_isHovered)
+            SpriteRenderer.sprite = _defaultSprite;
+    }
+
+    public void SetHoverSprite(Sprite sprite)
+    {
+        HoverSprite = sprite;
+
+        if (_isHovered && HoverSprite != null)
+            SpriteRenderer.sprite = HoverSprite;
     }
 
     // Reset is called when the user hits the Reset button in the

@@ -314,6 +314,7 @@ GameObject:
   - component: {fileID: 522812607}
   - component: {fileID: 522812608}
   - component: {fileID: 522812609}
+  - component: {fileID: 522812610}
   m_Layer: 0
   m_Name: Lemari Atas
   m_TagString: Untagged
@@ -383,7 +384,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 6cfc944bbcb1536478c7a3c6c32eeebc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -471,6 +472,23 @@ MonoBehaviour:
   Clicked:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &522812610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522812604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d10e768c932c064f93da0997f6c20b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ContainerItem
+  _item: {fileID: 522812609}
+  _itemsInContainer: []
+  _hover: {fileID: 522812608}
+  _openedSprite: {fileID: 21300000, guid: 6cfc944bbcb1536478c7a3c6c32eeebc, type: 3}
+  _openedHoverSprite: {fileID: 21300000, guid: a08b8c50c9bda0e4cad4d2433ee45349, type: 3}
 --- !u!1 &707205551
 GameObject:
   m_ObjectHideFlags: 0
@@ -484,6 +502,7 @@ GameObject:
   - component: {fileID: 707205554}
   - component: {fileID: 707205555}
   - component: {fileID: 707205556}
+  - component: {fileID: 707205557}
   m_Layer: 0
   m_Name: Laci
   m_TagString: Untagged
@@ -553,7 +572,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 386cf2a1e7fb8284282d3bd09300b843, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -641,6 +660,23 @@ MonoBehaviour:
   Clicked:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &707205557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707205551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d10e768c932c064f93da0997f6c20b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ContainerItem
+  _item: {fileID: 707205556}
+  _itemsInContainer: []
+  _hover: {fileID: 707205555}
+  _openedSprite: {fileID: 21300000, guid: e87ebe6a6c8945646b8e75d907a59915, type: 3}
+  _openedHoverSprite: {fileID: 21300000, guid: cae5515a1099daa4894c273c0c430b1d, type: 3}
 --- !u!1 &887408515
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,7 +918,7 @@ GameObject:
   - component: {fileID: 1362674846}
   - component: {fileID: 1362674849}
   m_Layer: 0
-  m_Name: diary
+  m_Name: Diary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -992,7 +1028,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1981997139514376880, guid: a49896a4ce610594799ed87665da2d9e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1519,6 +1555,7 @@ GameObject:
   - component: {fileID: 1854910801}
   - component: {fileID: 1854910802}
   - component: {fileID: 1854910803}
+  - component: {fileID: 1854910804}
   m_Layer: 0
   m_Name: Kulkas
   m_TagString: Untagged
@@ -1588,7 +1625,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 230ee194decf16e4d9fcbabdd78458f4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1676,6 +1713,23 @@ MonoBehaviour:
   Clicked:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1854910804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854910798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d10e768c932c064f93da0997f6c20b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ContainerItem
+  _item: {fileID: 1854910803}
+  _itemsInContainer: []
+  _hover: {fileID: 1854910802}
+  _openedSprite: {fileID: 21300000, guid: 230ee194decf16e4d9fcbabdd78458f4, type: 3}
+  _openedHoverSprite: {fileID: 21300000, guid: 8d8024dce20db2d4eb6acc09e1e9ef4d, type: 3}
 --- !u!1 &2118077643
 GameObject:
   m_ObjectHideFlags: 0
