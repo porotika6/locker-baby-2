@@ -20,6 +20,22 @@ public interface IHoverable
     public void OnHoverExited();
 }
 
+/// <summary>
+/// Manages hover interactions with 2D colliders in the scene.
+/// 
+/// This singleton manager detects when the mouse pointer hovers over objects with the IHoverable interface
+/// and triggers their hover callbacks. It uses raycasting to determine which object is currently under the pointer.
+/// 
+/// The HoverManager is automatically instantiated at runtime and persists across scene loads.
+/// Only one instance should exist in the scene at any given time.
+/// </summary>
+/// <remarks>
+/// Usage:
+/// 1. Implement the IHoverable interface on objects you want to make hoverable.
+/// 2. Attach the implementation to a GameObject with a Collider2D component.
+/// 
+/// The hover detection runs every frame in the Update() method.
+/// </remarks>
 public class HoverManager : MonoBehaviour
 {
     public LayerMask ClickableLayers = -1; // -1 means all layers

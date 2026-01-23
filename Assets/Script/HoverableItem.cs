@@ -15,6 +15,7 @@ public class DetectHover : MonoBehaviour, IHoverable
             defaultSprite = SpriteRenderer.sprite;
     }
 
+    // Called by HoverManager when the mouse starts hovering over the object.
     public void OnHoverEntered()
     {
         isHovered = true;
@@ -23,6 +24,7 @@ public class DetectHover : MonoBehaviour, IHoverable
             SpriteRenderer.sprite = HoverSprite;
     }
 
+    // Called by HoverManager when the mouse stops hovering over the object.
     public void OnHoverExited()
     {
         isHovered = false;
@@ -31,10 +33,8 @@ public class DetectHover : MonoBehaviour, IHoverable
             SpriteRenderer.sprite = defaultSprite;
     }
 
-    /// <summary>
-    /// Reset is called when the user hits the Reset button in the
-    /// Inspector's context menu OR when adding the component the first time.
-    /// </summary>
+    // Reset is called when the user hits the Reset button in the
+    // Inspector's context menu OR when adding the component the first time.
     private void Reset()
     {
         SpriteRenderer = GetComponentInChildren<SpriteRenderer>();
