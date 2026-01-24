@@ -25,6 +25,18 @@ public class ContainerItem : MonoBehaviour
     {
         _closedSprite = _hover.SpriteRenderer.sprite;
         _closedHoverSprite = _hover.HoverSprite;
+
+        if (!_openedSprite)
+        {
+            Debug.LogWarning($"<color=yellow>[{name}]</color> Opened Sprite is not assigned. Assigning the closed sprite as the opened sprite.", this);
+            _openedSprite = _closedSprite;
+        }
+
+        if (!_openedHoverSprite)
+        {
+            Debug.LogWarning($"<color=yellow>[{name}]</color> Opened Hover Sprite is not assigned. Assigning the closed hover sprite as the opened hover sprite.", this);
+            _openedHoverSprite = _closedHoverSprite;
+        }
     }
 
     private void Start()

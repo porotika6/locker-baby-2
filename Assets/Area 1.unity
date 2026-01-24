@@ -487,8 +487,8 @@ MonoBehaviour:
   _item: {fileID: 522812609}
   _itemsInContainer: []
   _hover: {fileID: 522812608}
-  _openedSprite: {fileID: 21300000, guid: 6cfc944bbcb1536478c7a3c6c32eeebc, type: 3}
-  _openedHoverSprite: {fileID: 21300000, guid: a08b8c50c9bda0e4cad4d2433ee45349, type: 3}
+  _openedSprite: {fileID: 0}
+  _openedHoverSprite: {fileID: 0}
 --- !u!1 &707205551
 GameObject:
   m_ObjectHideFlags: 0
@@ -1728,8 +1728,8 @@ MonoBehaviour:
   _item: {fileID: 1854910803}
   _itemsInContainer: []
   _hover: {fileID: 1854910802}
-  _openedSprite: {fileID: 21300000, guid: 230ee194decf16e4d9fcbabdd78458f4, type: 3}
-  _openedHoverSprite: {fileID: 21300000, guid: 8d8024dce20db2d4eb6acc09e1e9ef4d, type: 3}
+  _openedSprite: {fileID: 0}
+  _openedHoverSprite: {fileID: 0}
 --- !u!1 &2118077643
 GameObject:
   m_ObjectHideFlags: 0
